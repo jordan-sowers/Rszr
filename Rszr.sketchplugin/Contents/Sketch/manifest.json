@@ -1,0 +1,29 @@
+{
+  "name": "Rszr",
+  "description": "Plugin to quickly resize original dimensions of symbols",
+  "author": "Jordan Sowers",
+  "compatibleVersion": 3,
+  "version": "1.0",
+  "appcast": "https://github.com/jordan-sowers/Rszr/blob/master/src/appcast.xml",
+  "commands": [
+    {
+      "name": "Resize to Original Dimensions",
+      "identifier": "size",
+      "script": "original-size.js",
+      "shortcut": "ctrl o"
+    },
+    {
+      "name": "Resize to Original Dimensions and Position",
+      "identifier": "position",
+      "script": "original-position.js",
+      "shortcut": "ctrl cmd o"
+    }
+  ],
+  "menu": {
+    "items": [
+      "size",
+      "position"
+    ]
+  },
+  "disableCocoaScriptPreprocessor": true
+}
